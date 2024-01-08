@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class SolverMain {
 
-	public static final int maxAttempts = 10000000;
+	public static final int maxAttempts = 1000000;
 
 	public static void main(String[] args) {
 
