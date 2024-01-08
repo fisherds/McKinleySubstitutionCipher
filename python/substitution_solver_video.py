@@ -1,3 +1,10 @@
+# https://www.youtube.com/playlist?list=PLiEts138s9P1M9AUU7SCwt8ZkQRDGzSJQ
+# 17. Basic Substitution cipher (no solving)
+# https://www.youtube.com/watch?v=yJn_IaMXp04&list=PLiEts138s9P1M9AUU7SCwt8ZkQRDGzSJQ&index=17
+# 18. Cracking (solving) a substitution cipher
+# https://www.youtube.com/watch?v=sHoZiDeY-xM
+# https://inventwithpython.com/cracking/chapter17.html
+
 # Simple Substitution Cipher Hacker
 # https://www.nostarch.com/crackingcodes/ (BSD Licensed)
 import os, re, copy, pyperclip, simpleSubCipher, wordPatterns, makeWordPatterns
@@ -22,8 +29,8 @@ def main():
     # myKey = 'LFWOAYUISVKMNXPBDCRJTQEGHZ'
 
     # ciphered message from https://sefi.org/hsef/Display%20and%20Safety.pdf
-    message = "KCDPJFO FGK DFLABO IEMMCBBAA MCDDCEG BNA MCDDCEG EL BNCD IEMMCBBAA CD BE AGDQHA BNFB FJJ IEMPABCBEHD VQFJCLO LEH IEMPABCBCEG FIIEHKCGT BE BNA HQJAD ADBFSJCDNAK CG IEGWQGIBCEG RCBN BNA DICAGBCLCI HAUCAR IEMMCBBAA FGK DEICABO LEH DICAGIA BNA NDAL KCDPJFO  DFLABO CGDPAIBCEG PHEIADD IFG SA CGCBCFBAK EGJO RNAG FJJ CBAMD FHA PHADAGB FB BNA KCDPJFO BNA KCDPJFO  DFLABO IEMMCBBAA RCJJ ELLAH TQCKFGIA EG KCDPJFO  DFLABO CDDQAD LEH PHEWAIBD FPPHEUAK SO BNA DHI BE IEMPABA CG NDAL EIIFDCEGFJJO BNA NDAL KCDPJFO  DFLABO IEMMCBBAA MFO HAVQCHA DBQKAGBD BE MFXA HAUCDCEGD BE IEGLEHM BE KCDPJFO  DFLABO HATQJFBCEGD PAHDCDBAGB CDDQAD RCJJ SA KCHAIBAK BE F IEMMCBBAA EL CGKCUCKQFJD RNCIN MFO CGIJQKA DALC PAHDEGGAJ KCDPJFO  DFLABO KD FGKEH DICAGBCLCI HAUCAR IEMMCBBAA DHI AYAIQBCUA IEMMCBBAA MAMSAHD BNA LEJJERCGT HATQJFBCEGD MQDB SA FKNAHAK BE RNAG F DBQKAGB AYNCSCBD F PHEWAIB FB NDAL FJJ PHEWAIBD MQDB FKNAHA BE BNA KCDPJFO  DFLABO HAVQCHAMAGBD EL BNA FLLCJCFBAK LFCHD CG RNCIN BNAO IEMPABA XGERJAKTA EL BNADA HAVQCHAMAGBD CD BNA HADPEGDCSCJCBO EL BNA LCGFJCDB FKQJB DPEGDEH FGK LFCH KCHAIBEH"
-    
+    # message = "KCDPJFO FGK DFLABO IEMMCBBAA MCDDCEG BNA MCDDCEG EL BNCD IEMMCBBAA CD BE AGDQHA BNFB FJJ IEMPABCBEHD VQFJCLO LEH IEMPABCBCEG FIIEHKCGT BE BNA HQJAD ADBFSJCDNAK CG IEGWQGIBCEG RCBN BNA DICAGBCLCI HAUCAR IEMMCBBAA FGK DEICABO LEH DICAGIA BNA NDAL KCDPJFO  DFLABO CGDPAIBCEG PHEIADD IFG SA CGCBCFBAK EGJO RNAG FJJ CBAMD FHA PHADAGB FB BNA KCDPJFO BNA KCDPJFO  DFLABO IEMMCBBAA RCJJ ELLAH TQCKFGIA EG KCDPJFO  DFLABO CDDQAD LEH PHEWAIBD FPPHEUAK SO BNA DHI BE IEMPABA CG NDAL EIIFDCEGFJJO BNA NDAL KCDPJFO  DFLABO IEMMCBBAA MFO HAVQCHA DBQKAGBD BE MFXA HAUCDCEGD BE IEGLEHM BE KCDPJFO  DFLABO HATQJFBCEGD PAHDCDBAGB CDDQAD RCJJ SA KCHAIBAK BE F IEMMCBBAA EL CGKCUCKQFJD RNCIN MFO CGIJQKA DALC PAHDEGGAJ KCDPJFO  DFLABO KD FGKEH DICAGBCLCI HAUCAR IEMMCBBAA DHI AYAIQBCUA IEMMCBBAA MAMSAHD BNA LEJJERCGT HATQJFBCEGD MQDB SA FKNAHAK BE RNAG F DBQKAGB AYNCSCBD F PHEWAIB FB NDAL FJJ PHEWAIBD MQDB FKNAHA BE BNA KCDPJFO  DFLABO HAVQCHAMAGBD EL BNA FLLCJCFBAK LFCHD CG RNCIN BNAO IEMPABA XGERJAKTA EL BNADA HAVQCHAMAGBD CD BNA HADPEGDCSCJCBO EL BNA LCGFJCDB FKQJB DPEGDEH FGK LFCH KCHAIBEH"
+    message = "Osrbmlh & Rlyajh Wpnnsjjaa Nsrrspx --> Jia nsrrspx py jisr wpnnsjjaa sr jp axrtca jilj lmm wpnbajsjpcr dtlmsyh ypc wpnbajsjspx lwwpcosxu jp jia ctmar arjlfmsriao sx wpxvtxwjspx esji jia Rwsaxjsysw Caqsae Wpnnsjjaa lxo Rpwsajh ypc Rwsaxwa. Jia IRAY Osrbmlh & Rlyajh sxrbawjspx bcpwarr wlx fa sxsjsljao pxmh eiax lmm sjanr lca bcaraxj lj jia osrbmlh. Jia Osrbmlh & Rlyajh Wpnnsjjaa esmm pyyac utsolxwa px Osrbmlh & Rlyajh srrtar ypc bcpvawjr lbbcpqao fh jia RCW jp wpnbaja sx IRAY. Pwwlrspxlmmh, jia IRAY Osrbmlh & Rlyajh Wpnnsjjaa nlh cadtsca rjtoaxjr jp nlka caqsrspxr jp wpxypcn jp Osrbmlh & Rlyajh cautmljspxr. Bacrsrjaxj srrtar esmm fa oscawjao jp l wpnnsjjaa py sxosqsotlmr eiswi nlh sxwmtoa RAYS bacrpxxam, Osrbmlh & Rlyajh (O&R) lxo/pc Rwsaxjsysw Caqsae Wpnnsjjaa (RCW) agawtjsqa wpnnsjjaa nanfacr. Jia ypmmpesxu cautmljspxr ntrj fa loiacao jp eiax l rjtoaxj agisfsjr l bcpvawj lj IRAY. Lmm bcpvawjr ntrj loiaca jp jia Osrbmlh & Rlyajh cadtscanaxjr py jia lyysmsljao ylsc(r) sx eiswi jiah wpnbaja. Kxpemaoua py jiara cadtscanaxjr sr jia carbpxrsfsmsjh py jia Ysxlmsrj, Lotmj Rbpxrpc, lxo Ylsc Oscawjpc."
     # BTW the solution to the above is:
     # message = "Display and Safety Committee Mission \n" \
 	# 			+ "The mission of this committee is to ensure that all competitors qualify for competition according to the\n" \
