@@ -16,8 +16,27 @@ def main():
     #     lwwpcolxwa jp isr sxrjsxwjr, ia esmm lwwabj sj aqax px jia
     #     rmsuijarj aqsoaxwa. Jia pcsusx py nhjir sr agbmlsxao sx jisr elh.
     #     -Facjclxo Ctrramm"""
+    #
+    # BTW the solution to the above is:
+    # myMessage = 'If a man is offered a fact which goes against his instincts, he will scrutinize it closely, and unless the evidence is overwhelming, he will refuse to believe it. If, on the other hand, he is offered something which affords a reason for acting in accordance to his instincts, he will accept it even on the slightest evidence. The origin of myths is explained in this way. -Bertrand Russell'
+    # myKey = 'LFWOAYUISVKMNXPBDCRJTQEGHZ'
 
-    message = "KCDPJFO FGK DFLABO IEMMCBBAA MCDDCEG BNA MCDDCEG EL BNCD IEMMCBBAA CD BE AGDQHA BNFB FJJ IEMPABCBEHD VQFJCLO LEH IEMPABCBCEG FIIEHKCGT BE BNAHQJAD ADBFSJCDNAK CG IEGWQGIBCEG RCBN BNA DICAGBCLCI HAUCAR IEMMCBBAA FGK DEICABO LEH DICAGIABNA NDAL KCDPJFO  DFLABO CGDPAIBCEG PHEIADD IFG SA CGCBCFBAK EGJO RNAG FJJ CBAMD FHA PHADAGB FB BNAKCDPJFO BNA KCDPJFO  DFLABO IEMMCBBAA RCJJ ELLAH TQCKFGIA EG KCDPJFO  DFLABO CDDQAD LEH PHEWAIBDFPPHEUAK SO BNA DHI BE IEMPABA CG NDAL EIIFDCEGFJJO BNA NDAL KCDPJFO  DFLABO IEMMCBBAA MFOHAVQCHA DBQKAGBD BE MFXA HAUCDCEGD BE IEGLEHM BE KCDPJFO  DFLABO HATQJFBCEGD PAHDCDBAGB CDDQAD RCJJ SAKCHAIBAK BE F IEMMCBBAA EL CGKCUCKQFJD RNCIN MFO CGIJQKA DALC PAHDEGGAJ KCDPJFO  DFLABO KDFGKEH DICAGBCLCI HAUCAR IEMMCBBAA DHI AYAIQBCUA IEMMCBBAA MAMSAHDBNA LEJJERCGT HATQJFBCEGD MQDB SA FKNAHAK BE RNAG F DBQKAGB AYNCSCBD F PHEWAIB FB NDAL FJJ PHEWAIBDMQDB FKNAHA BE BNA KCDPJFO  DFLABO HAVQCHAMAGBD EL BNA FLLCJCFBAK LFCHD CG RNCIN BNAO IEMPABAXGERJAKTA EL BNADA HAVQCHAMAGBD CD BNA HADPEGDCSCJCBO EL BNA LCGFJCDB FKQJB DPEGDEH FGK LFCH KCHAIBEH"
+    # ciphered message from https://sefi.org/hsef/Display%20and%20Safety.pdf
+    message = "KCDPJFO FGK DFLABO IEMMCBBAA MCDDCEG BNA MCDDCEG EL BNCD IEMMCBBAA CD BE AGDQHA BNFB FJJ IEMPABCBEHD VQFJCLO LEH IEMPABCBCEG FIIEHKCGT BE BNA HQJAD ADBFSJCDNAK CG IEGWQGIBCEG RCBN BNA DICAGBCLCI HAUCAR IEMMCBBAA FGK DEICABO LEH DICAGIA BNA NDAL KCDPJFO  DFLABO CGDPAIBCEG PHEIADD IFG SA CGCBCFBAK EGJO RNAG FJJ CBAMD FHA PHADAGB FB BNA KCDPJFO BNA KCDPJFO  DFLABO IEMMCBBAA RCJJ ELLAH TQCKFGIA EG KCDPJFO  DFLABO CDDQAD LEH PHEWAIBD FPPHEUAK SO BNA DHI BE IEMPABA CG NDAL EIIFDCEGFJJO BNA NDAL KCDPJFO  DFLABO IEMMCBBAA MFO HAVQCHA DBQKAGBD BE MFXA HAUCDCEGD BE IEGLEHM BE KCDPJFO  DFLABO HATQJFBCEGD PAHDCDBAGB CDDQAD RCJJ SA KCHAIBAK BE F IEMMCBBAA EL CGKCUCKQFJD RNCIN MFO CGIJQKA DALC PAHDEGGAJ KCDPJFO  DFLABO KD FGKEH DICAGBCLCI HAUCAR IEMMCBBAA DHI AYAIQBCUA IEMMCBBAA MAMSAHD BNA LEJJERCGT HATQJFBCEGD MQDB SA FKNAHAK BE RNAG F DBQKAGB AYNCSCBD F PHEWAIB FB NDAL FJJ PHEWAIBD MQDB FKNAHA BE BNA KCDPJFO  DFLABO HAVQCHAMAGBD EL BNA FLLCJCFBAK LFCHD CG RNCIN BNAO IEMPABA XGERJAKTA EL BNADA HAVQCHAMAGBD CD BNA HADPEGDCSCJCBO EL BNA LCGFJCDB FKQJB DPEGDEH FGK LFCH KCHAIBEH"
+    
+    # BTW the solution to the above is:
+    # message = "Display and Safety Committee Mission \n" \
+	# 			+ "The mission of this committee is to ensure that all competitors qualify for competition according to the\n" \
+	# 			+ "rules established in conjunction with the Scientific Review Committee and Society for Science.\n" \
+	# 			+ "The HSEF Display & Safety inspection process can be initiated only when all items are present at the\n" \
+	# 			+ "display. The Display & Safety Committee will offer guidance on Display & Safety issues for projects\n" \
+	# 			+ "approved by the SRC to compete in HSEF. Occasionally, the HSEF Display & Safety Committee may\n" \
+	# 			+ "require students to make revisions to conform to Display & Safety regulations. Persistent issues will be\n" \
+	# 			+ "directed to a committee of individuals which may include SEFI personnel, Display & Safety (D&S)\n" \
+	# 			+ "and/or Scientific Review Committee (SRC) executive committee members.\n" \
+	# 			+ "The following regulations must be adhered to when a student exhibits a project at HSEF. All projects\n" \
+	# 			+ "must adhere to the Display & Safety requirements of the affiliated fair(s) in which they compete.\n" \
+	# 			+ "Knowledge of these requirements is the responsibility of the Finalist, Adult Sponsor, and Fair Director."
 
     # Determine the possible valid ciphertext translations:
     print('Hacking...')
