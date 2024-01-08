@@ -26,3 +26,4 @@ java/.DS_Store
 java/.project
 java/.classpath
 .DS_Store
+*.pyc
