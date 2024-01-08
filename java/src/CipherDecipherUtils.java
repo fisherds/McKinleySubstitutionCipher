@@ -1,7 +1,9 @@
 package src;
 
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 
 public class CipherDecipherUtils {
     private static final String ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -14,6 +16,16 @@ public class CipherDecipherUtils {
         	}
         }
         return plainText.toString().trim().toUpperCase();
+	}
+	
+	public static int getUniqueLetterCount(String text) {
+		Set<Character> uniqueCharacters = new HashSet<Character>();
+		char[] letters = filterPlainText(text).toCharArray();
+        for (char c : letters) {
+        	uniqueCharacters.add(c);
+        }
+        uniqueCharacters.remove(' ');
+        return uniqueCharacters.size();
 	}
 	
 	public static String generateKey(String plainText) {
