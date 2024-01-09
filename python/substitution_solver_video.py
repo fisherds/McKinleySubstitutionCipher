@@ -7,7 +7,7 @@
 
 # Simple Substitution Cipher Hacker
 # https://www.nostarch.com/crackingcodes/ (BSD Licensed)
-import os, re, copy, pyperclip, simpleSubCipher, wordPatterns, makeWordPatterns
+import os, re, copy, simpleSubCipher, wordPatterns, makeWordPatterns
 
 LETTERS = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 nonLettersOrSpacePattern = re.compile('[^A-Z\s]')
