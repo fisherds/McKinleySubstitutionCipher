@@ -20,6 +20,8 @@ def main():
 				+ "The following regulations must be adhered to when a student exhibits a project at HSEF. All projects " \
 				+ "must adhere to the Display & Safety requirements of the affiliated fair(s) in which they compete. " \
 				+ "Knowledge of these requirements is the responsibility of the Finalist, Adult Sponsor, and Fair Director."
+    
+    
     myKey = 'LFWOAYUISVKMNXPBDCRJTQEGHZ'
     myMode = 'encrypt' # Set to either 'encrypt' or 'decrypt'.
 
@@ -68,13 +70,22 @@ def translateMessage(key, message, mode):
         if symbol.upper() in charsA:
             # Encrypt/decrypt the symbol:
             symIndex = charsA.find(symbol.upper())
-            if symbol.isupper():
-                translated += charsB[symIndex].upper()
-            else:
-                translated += charsB[symIndex].lower()
-        else:
-            # Symbol is not in LETTERS; just add it
+
+            # Made all caps
+            translated += charsB[symIndex].upper()
+            # if symbol.isupper():
+            #     translated += charsB[symIndex].upper()
+            # else:
+            #     translated += charsB[symIndex].lower()
+
+        # Removed to have all caps!
+        elif symbol == " ":
+            # add spaces
             translated += symbol
+
+        # else:
+        #     # Symbol is not in LETTERS; just add it
+        #     translated += symbol
 
     return translated
 

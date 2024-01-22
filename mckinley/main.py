@@ -6,6 +6,7 @@ def main():
     # f = open("mckinley/small_dict.txt", "r")
     # print(f.readline())
     # f.close()
+    master_key = {}
     word_pattern_dict = {}
     with open('mckinley/dictionary.txt') as f:
         for word in f:
@@ -17,9 +18,31 @@ def main():
                 word_pattern_dict[pattern].append(word)
             else:
                 word_pattern_dict[pattern] = [word]
+    
+    with open('mckinley/secret01.txt') as f:
+        text = f.read()
+        words = text.split(' ')
+    
+    for word in words:
+        result = get_options(word, word_pattern_dict)
+        if result == -1:
+            continue
+        merge_results(master_key, result)
+        print(word, master_key)
+        print()
+        print()
+
     # print(word_pattern_dict)
-    result = get_options("SUMMER", word_pattern_dict)
-    print(result)
+    # result = get_options("ABCCDE", word_pattern_dict)
+    # merge_results(master_key, result)
+    # print("ABCCDE", master_key)
+    # print()
+    # # result = get_options("ABC", word_pattern_dict)
+    # merge_results(master_key, {"A": {"Z", "Q"}})
+    # print("fake", master_key)
+    # # result = get_options("CDED", word_pattern_dict)
+    # merge_results(master_key, result)
+    # print(master_key)
 
 def get_pattern(word):
     amount = len(word)
@@ -45,6 +68,8 @@ def get_pattern(word):
     
 def get_options(ciphertext, word_pattern_dict):
     pattern = get_pattern(ciphertext)
+    if pattern not in word_pattern_dict:
+        return -1
     options_list = word_pattern_dict[pattern]
     options_dict = {}
     for letter in ciphertext:
@@ -57,6 +82,18 @@ def get_options(ciphertext, word_pattern_dict):
             set_for_letter.add(letter_in_option)
     
     return options_dict
+
+def merge_results(master_key, options_dict):
+    for key in options_dict:
+        # print(key)
+        # print(options_dict[key])
+        if key in master_key:
+            # print('letter found', key)
+            master_key[key] = master_key[key].intersection(options_dict[key])
+        else:
+            # print('letter not found')
+            master_key[key] = options_dict[key]
+            
 
 
 
