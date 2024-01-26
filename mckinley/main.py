@@ -28,9 +28,6 @@ def main():
         if result == -1:
             continue
         merge_results(master_key, result)
-        print(word, master_key)
-        print()
-        print()
 
     # print(word_pattern_dict)
     # result = get_options("ABCCDE", word_pattern_dict)
@@ -43,6 +40,28 @@ def main():
     # # result = get_options("CDED", word_pattern_dict)
     # merge_results(master_key, result)
     # print(master_key)
+
+    # Print results info:
+    for cipher_letter in master_key:
+        plaintext_letter_options = list(master_key[cipher_letter])
+        if len(plaintext_letter_options) == 1:
+            print("We know that the cipher letter " + cipher_letter + " is really a " + plaintext_letter_options[0])
+        else:
+            print("Not sure about " + cipher_letter + " it could be " + str(plaintext_letter_options))
+
+    translated = ""
+    for cipher_letter in text:
+        if cipher_letter == " ":
+            translated += " "
+            continue
+        plaintext_letter_options = list(master_key[cipher_letter])
+        if len(plaintext_letter_options) == 1:
+            translated += plaintext_letter_options[0]
+        else:
+            translated += "."
+
+    print(translated) 
+        
 
 def get_pattern(word):
     amount = len(word)
